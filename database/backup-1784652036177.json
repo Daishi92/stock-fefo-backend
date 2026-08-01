@@ -1,0 +1,134 @@
+{
+  "users": [
+    {
+      "id": "8031338c-27ba-4c2b-a49a-52e41c600b41",
+      "nom": "Admin",
+      "email": "admin@test.com",
+      "password": "$2b$10$wK.j65SqpF43Lhc0/pS62.gGgxi2PPFqYvi4qpurU3n4/2QwHrFTS",
+      "role": "Administrateur",
+      "createdAt": "2026-07-21T11:22:09.012Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "9fe42f7f-d123-44de-ac06-c5aa62a655e2",
+      "nom": "Lait UHT",
+      "codeBarre": "123456789",
+      "image": "lait.jpg",
+      "categorie": "Alimentaire",
+      "lot": "LOT001",
+      "dateFabrication": "2026-07-01",
+      "dateExpiration": "2026-12-01",
+      "quantite": 90,
+      "emplacement": "Rayon A1",
+      "createdAt": "2026-07-21T11:35:08.326Z"
+    }
+  ],
+  "lots": [
+    {
+      "id": "22552805-5b49-40c4-ad0f-8da93dcc8625",
+      "productId": "9fe42f7f-d123-44de-ac06-c5aa62a655e2",
+      "numeroLot": "LOT002",
+      "quantite": 0,
+      "dateEntree": "2026-07-21T12:04:32.456Z",
+      "dateExpiration": "2026-08-01",
+      "emplacement": "Rayon A1",
+      "statut": "TERMINE"
+    },
+    {
+      "id": "31012913-2fdc-44ad-aed9-682e8c35f10a",
+      "productId": "9fe42f7f-d123-44de-ac06-c5aa62a655e2",
+      "numeroLot": "LOT003",
+      "quantite": 70,
+      "dateEntree": "2026-07-21T12:05:44.145Z",
+      "dateExpiration": "2026-12-01",
+      "emplacement": "Rayon A1",
+      "statut": "ACTIF"
+    }
+  ],
+  "stocks": [],
+  "damages": [
+    {
+      "id": "06e75bd0-6501-48bb-8d10-afa0eccdfa2f",
+      "productId": "9fe42f7f-d123-44de-ac06-c5aa62a655e2",
+      "produit": "Lait UHT",
+      "quantite": 5,
+      "raison": "CASSE",
+      "date": "2026-07-21T16:07:07.573Z",
+      "createdAt": "2026-07-21T16:07:07.576Z"
+    }
+  ],
+  "alerts": [],
+  "movements": [
+    {
+      "type": "SORTIE_FEFO",
+      "produit": "Lait UHT",
+      "codeBarre": "123456789",
+      "quantite": 10,
+      "date": "2026-07-21T11:54:07.169Z"
+    }
+  ],
+  "history": [
+    {
+      "id": "390f43fc-2269-4f43-9d05-c64da57815af",
+      "type": "SORTIE",
+      "action": "Sortie FEFO",
+      "produit": "Lait UHT",
+      "productId": "",
+      "quantite": 10,
+      "utilisateur": "Admin",
+      "date": "2026-07-21T16:17:33.383Z",
+      "createdAt": "2026-07-21T16:17:33.394Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "06c30ca6-d515-42e3-9e37-55e849fefa21",
+      "nom": "Alimentaire",
+      "description": "Produits alimentaires",
+      "createdAt": "2026-07-21T13:52:38.696Z"
+    }
+  ],
+  "suppliers": [
+    {
+      "id": "fe22f7a5-29e8-4eb8-b673-f5df403f0a12",
+      "nom": "Nestlé Cameroun",
+      "telephone": "690000000",
+      "email": "contact@nestle.com",
+      "adresse": "Douala",
+      "createdAt": "2026-07-21T14:28:30.396Z"
+    }
+  ],
+  "warehouses": [
+    {
+      "id": "36bc06a5-8e47-458b-bb27-7f46351fb2f8",
+      "nom": "Entrepôt Principal",
+      "adresse": "Douala",
+      "responsable": "Admin",
+      "statut": "ACTIF",
+      "createdAt": "2026-07-21T14:45:49.949Z"
+    }
+  ],
+  "locations": [
+    {
+      "id": "5e6ae5ed-6b64-40d8-a306-9adde2437b9c",
+      "warehouseId": "36bc06a5-8e47-458b-bb27-7f46351fb2f8",
+      "nom": "Case A1",
+      "zone": "Zone A",
+      "rayon": "Rayon A",
+      "etagere": "Etagère 1",
+      "case": "A1",
+      "createdAt": "2026-07-21T14:55:46.112Z"
+    }
+  ],
+  "inventories": [
+    {
+      "id": "ea0dff06-6476-47d1-8206-62db9081c938",
+      "warehouseId": "36bc06a5-8e47-458b-bb27-7f46351fb2f8",
+      "date": "2026-07-21T15:55:41.277Z",
+      "statut": "EN_COURS",
+      "lignes": [],
+      "createdAt": "2026-07-21T15:55:41.294Z"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+const express = require("express");
+const router = express.Router();
+const { verifyToken } = require("../middleware/authMiddleware");
+
+const {
+  getDashboard
+} = require("../controllers/dashboardController");
+
+// Voir le dashboard (Accessible utilisateurs et admin)
+router.get("/", verifyToken, getDashboard);
+
+module.exports = router;
