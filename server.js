@@ -100,8 +100,13 @@ app.get("/api/status", async (req, res) => {
 const PORT = process.env.PORT || 5000;
 
 initDB().then(() => {
-  app.listen(PORT, () => {
-    console.log(`🚀 Serveur lancé sur le port ${PORT}`);
-    console.log("✅ Base JSON connectée");
-  });
+  console.log("✅ Base JSON connectée");
+
+  if (require.main === module) {
+    app.listen(PORT, () => {
+      console.log(`🚀 Serveur lancé sur le port ${PORT}`);
+    });
+  }
 });
+
+module.exports = app;
